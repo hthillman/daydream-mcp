@@ -44,9 +44,9 @@ cat > package.json << 'EOF'
   "main": "api/mcp.ts",
   "scripts": {
     "dev": "vercel dev",
-    "build": "vercel build",
     "deploy": "vercel --prod",
-    "test": "curl -X POST http://localhost:3000/test -H 'Authorization: Bearer test-key'"
+    "test-local": "curl -X POST http://localhost:3000/test -H 'Authorization: Bearer test-key'",
+    "test-prod": "curl -X POST https://$npm_package_name.vercel.app/test -H 'Authorization: Bearer test-key'"
   },
   "keywords": [
     "mcp",
