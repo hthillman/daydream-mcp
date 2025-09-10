@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Fresh Multi-tenant Daydream MCP Server Setup
+# Creates everything from scratch
 
 set -e
 
@@ -1251,9 +1252,15 @@ echo "│   ├── index.ts        # Beautiful landing page"
 echo "│   ├── health.ts       # Health monitoring"
 echo "│   └── test.ts         # API key testing"
 echo "├── package.json        # Dependencies"
-echo "├── vercel.json         # Deployment config"
+echo "├── vercel.json         # Deployment config (updated for latest Vercel)"
 echo "├── tsconfig.json       # TypeScript config"
 echo "└── README.md           # Documentation"
+echo ""
+echo "✅ Configuration highlights:"
+echo "- Uses modern 'rewrites' instead of deprecated 'routes'"
+echo "- Optimized function timeouts for each endpoint"
+echo "- CORS handled in code (more reliable than headers config)"
+echo "- No deprecated properties"
 echo ""
 echo "🚀 Next steps:"
 echo "1. Deploy to Vercel:"
@@ -1270,4 +1277,4 @@ echo "- Public MCP endpoint for unlimited users"
 echo "- Rate limiting and security features"
 echo "- Zero maintenance required!"
 echo ""
-echo "✨ Ready to serve the world!"
+echo "✨ Ready to serve the world with the latest Vercel config!"
